@@ -2,6 +2,7 @@
 
 import serial
 import socket
+from sys import argv
 
 ser = serial.Serial('/dev/serial0', baudrate=38400)    
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -34,5 +35,9 @@ while True:
   #  print 'Program change'
   #else:
   #  print "message", messagetype, messagechannel, note, velocity
+
+  if "--debug" in argv:
+    print "message", messagetype, messagechannel, note, velocity
+  
   sock.sendto(" ".join([hex(x) for x in message]) + ";\n", ("127.0.0.1", 42242))
 

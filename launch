@@ -1,7 +1,19 @@
 #!/bin/bash
 
+# mixer bash
+./mixer-settings
+
 # midi connect
-( /bin/sleep 10; /usr/bin/aconnect 24:0 128:0; /usr/bin/aconnect 128:2 24:0; ) &
+( /bin/sleep 10; 
+  /usr/bin/aconnect nanoKONTROL2:0 "Pure Data":0
+  /usr/bin/aconnect "Pure Data":2 nanoKONTROL2:0
+  /usr/bin/aconnect Nooder-1:0 "Pure Data":1
+#  /usr/bin/aconnect 24:0 128:0;
+#  /usr/bin/aconnect 28:0 128:0;
+#  /usr/bin/aconnect 128:2 24:0;
+#  /usr/bin/aconnect 128:2 28:0;
+#  /usr/bin/aconnect 16:0 128:1;
+) &
 
 # gba serial watcher
 ./gba-sync-serial.py &
@@ -14,7 +26,7 @@ else
   guiflag=""
 fi
 
-/usr/bin/pd $guiflag -alsamidi -mididev 0,1 _main.pd &
+/usr/bin/pd $guiflag -alsamidi -mididev 0,1 -open _record.pd -open _main.pd &
 pdpid=$!
 
 # trap exit and kill daemons

@@ -1,0 +1,10 @@
+#N canvas 349 214 450 300 10;
+#X obj 18 166 writesf~ 2;
+#X msg 18 57 open live-recording.wav \, start;
+#X obj 18 32 loadbang;
+#X obj 156 101 r~ master/right;
+#X obj 38 101 r~ master/left;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 1;
+#X connect 4 0 0 0;

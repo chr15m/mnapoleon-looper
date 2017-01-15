@@ -1,0 +1,1 @@
+@reboot cd /home/pi/c64-emu-with-fx/ && ./launch

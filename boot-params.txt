@@ -1,0 +1,18 @@
+http://spellfoundry.com/2016/05/29/configuring-gpio-serial-port-raspbian-jessie-including-pi-3/
+
+Serial
+------
+
+/boot/cmline.txt
+	remove console=serial0,115200
+
+/boot/config.txt
+	enable_uart=1
+
+Screen blanking
+---------------
+
+/etc/kbd/config
+	BLANK_TIME=0
+	POWERDOWN_TIME=0
+
