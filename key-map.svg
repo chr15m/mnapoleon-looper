@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="296.28683"
-     inkscape:cy="119.70943"
+     inkscape:zoom="2.8"
+     inkscape:cx="280.87395"
+     inkscape:cy="97.082758"
      inkscape:document-units="px"
      inkscape:current-layer="svg2"
      showgrid="false"
@@ -685,13 +685,6 @@
        x="302.42828"
        sodipodi:role="line"
        id="tspan3935">8</tspan></text>
-  <rect
-     y="89.620644"
-     x="327.69208"
-     height="23.758694"
-     width="10.901551"
-     id="rect3937"
-     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
   <text
      sodipodi:linespacing="125%"
      id="text3939"
@@ -748,17 +741,6 @@
        x="151.82744"
        id="tspan3963"
        sodipodi:role="line">f</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Falcon Punch Straight;-inkscape-font-specification:Falcon Punch Straight Italic"
-     x="353.82745"
-     y="112.15483"
-     id="text3965"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan3967"
-       x="353.82745"
-       y="112.15483">k</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Falcon Punch Straight;-inkscape-font-specification:Falcon Punch Straight Italic"
@@ -977,4 +959,41 @@
        x="301.85538"
        id="tspan4089"
        sodipodi:role="line">m</tspan></text>
+  <text
+     sodipodi:linespacing="125%"
+     id="text4091"
+     y="27.423508"
+     x="32.261662"
+     style="font-size:7.91753435px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Falcon Punch Straight;-inkscape-font-specification:Falcon Punch Straight"
+     xml:space="preserve"><tspan
+       y="27.423508"
+       x="32.261662"
+       sodipodi:role="line"
+       id="tspan4107">bpm</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:7.91753435px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Falcon Punch Straight;-inkscape-font-specification:Falcon Punch Straight"
+     x="40.833092"
+     y="62.066368"
+     id="text4109"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       x="40.833092"
+       y="62.066368"
+       id="tspan4117">metro</tspan><tspan
+       sodipodi:role="line"
+       x="40.833092"
+       y="71.96328"
+       id="tspan4121">nome</tspan></text>
+  <text
+     sodipodi:linespacing="125%"
+     id="text4125"
+     y="112.15483"
+     x="319.54175"
+     style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Falcon Punch Straight;-inkscape-font-specification:Falcon Punch Straight Italic"
+     xml:space="preserve"><tspan
+       y="112.15483"
+       x="319.54175"
+       id="tspan4127"
+       sodipodi:role="line">j</tspan></text>
 </svg>
