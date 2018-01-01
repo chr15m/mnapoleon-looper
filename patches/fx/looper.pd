@@ -39,7 +39,6 @@
 #X obj 261 152 print arp-loop-continue;
 #X msg 111 36 stop \, bang;
 #X obj 261 85 / 1000;
-#X obj 725 235 # table \$0/loop 441000;
 #X obj 725 257 table \$0/loop 882000;
 #X connect 0 0 1 0;
 #X connect 0 0 7 0;
