@@ -1,0 +1,15 @@
+in-loop/toggle 67 1;
+in2-loop/toggle 68 1;
+arp-tuning/slider 19 1;
+arp-reverb/slider 18 1;
+fx-1/volume/slider 5 1;
+arp-cutoff/slider 23 1;
+fx-1/down-pre/toggle 70 1;
+fx-1/select/slider 6 1;
+arp-loop/toggle 71 1;
+fx-2/fx-2-pre/slider;
+fx-2/fx-1-pre/slider;
+fx-2/distortion/slider;
+mix/acid/5/rez-set/button;
+mix/acid/5/param-2-pre/slider;
+CYCLE/toggle 46 1;

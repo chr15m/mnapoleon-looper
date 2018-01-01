@@ -1,18 +1,30 @@
 audioapi: 1
 noaudioin: False
-audioindev1: 2 2
-audioindevname1: USB Sound Device (hardware)
+audioindev1: 4 1
+audioindevname1: USB PnP Sound Device (hardware)
 noaudioout: False
-audiooutdev1: 2 6
-audiooutdevname1: USB Sound Device (hardware)
+audiooutdev1: 4 2
+audiooutdevname1: USB PnP Sound Device (hardware)
 audiobuf: 25
 rate: 44100
 callback: 0
-blocksize: 64
+blocksize: 256
+midiapi: 0
 nomidiin: False
+midiindev1: 0
+midiindevname1: ?
+midiindev2: 0
+midiindevname2: ?
+nomidiout: False
+midioutdev1: 0
+midioutdevname1: ?
+midioutdev2: 0
+midioutdevname2: ?
 npath: 0
 standardpath: 1
 verbose: 0
 nloadlib: 0
 defeatrt: 0
 flags: 
+zoom: 1
+loading: no

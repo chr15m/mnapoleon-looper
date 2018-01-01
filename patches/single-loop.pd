@@ -1,0 +1,18 @@
+#N canvas 1277 622 450 300 10;
+#X obj 192 66 fx/snatch \$1 clock/bpm;
+#X obj 192 88 vol \$1;
+#X obj 192 110 fx-router \$1;
+#X obj 261 134 throw~ fx/bus;
+#X obj 192 162 random-stereo-phase \$2 \$3;
+#X obj 339 184 throw~ mix/right;
+#X obj 192 184 throw~ mix/left;
+#X obj 10 39 fx/looper clock/tick 16 \$1/loop;
+#X obj 9 10 inlet~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 2 1 3 0;
+#X connect 4 0 6 0;
+#X connect 4 1 5 0;
+#X connect 7 1 0 0;
+#X connect 8 0 7 0;

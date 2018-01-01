@@ -3,3 +3,5 @@
 mix="amixer -c1 -q set"
 $mix "PCM Capture Source" "Line"
 $mix "Mic" 95% unmute
+
+amixer -c0 -q set "Mic" 95% unmute

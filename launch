@@ -5,9 +5,9 @@
 
 # midi connect
 ( /bin/sleep 10; 
-  /usr/bin/aconnect nanoKONTROL2:0 "Pure Data":0
-  /usr/bin/aconnect "Pure Data":2 nanoKONTROL2:0
-  /usr/bin/aconnect Nooder-1:0 "Pure Data":1
+  #/usr/bin/aconnect nanoKONTROL2:0 "Pure Data":0
+  #/usr/bin/aconnect "Pure Data":2 nanoKONTROL2:0
+  #/usr/bin/aconnect Nooder-1:0 "Pure Data":1
 #  /usr/bin/aconnect 24:0 128:0;
 #  /usr/bin/aconnect 28:0 128:0;
 #  /usr/bin/aconnect 128:2 24:0;
@@ -15,9 +15,12 @@
 #  /usr/bin/aconnect 16:0 128:1;
 ) &
 
+sudo ./inputs.py &
+inputspid=$!
+
 # gba serial watcher
-./gba-sync-serial.py &
-gbapid=$!
+#./gba-sync-serial.py &
+#gbapid=$!
 
 if [ "$1" != "--gui" ]
 then
@@ -26,10 +29,21 @@ else
   guiflag=""
 fi
 
-/usr/bin/pd $guiflag -alsamidi -mididev 0,1 -open _record.pd -open _main.pd &
+if [ "$1" == "--record" ]
+then
+  recordflag="-open _record.pd"
+else
+  recordflag=""
+fi
+
+PD=`command -v pd || /usr/bin/pd`
+
+$PD -prefsfile ./pdsettings $guiflag "$recordflag" -open _main.pd &
+#/usr/bin/pd $guiflag -alsamidi -mididev 0,1 "$recordflag" -open _main.pd
 pdpid=$!
 
 # trap exit and kill daemons
-trap "kill $pdpid; kill $gbapid; trap - SIGTERM; exit" SIGTERM SIGINT EXIT
+#trap "kill $pdpid; kill $gbapid; trap - SIGTERM; exit" SIGTERM SIGINT EXIT
+trap "kill $pdpid; sudo kill $inputspid; trap - SIGTERM; exit" SIGTERM SIGINT EXIT
 
 wait "$pdpid"
