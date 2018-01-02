@@ -1,10 +1,10 @@
 audioapi: 1
 noaudioin: False
-audioindev1: 4 1
-audioindevname1: USB PnP Sound Device (hardware)
+audioindev1: 5 1
+audioindevname1: USB PnP Sound Device (plug-in)
 noaudioout: False
-audiooutdev1: 4 2
-audiooutdevname1: USB PnP Sound Device (hardware)
+audiooutdev1: 5 2
+audiooutdevname1: USB PnP Sound Device (plug-in)
 audiobuf: 25
 rate: 44100
 callback: 0

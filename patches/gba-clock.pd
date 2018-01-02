@@ -30,6 +30,10 @@
 #X obj 104 141 s gba-sync;
 #X obj 52 215 print bar time;
 #X obj 212 276 sel 0;
+#X obj 312 121 r clock/bpm/set;
+#X obj 312 193 expr 60000 / $f1;
+#X obj 312 143 t f f;
+#X obj 339 168 s clock/bpm;
 #X connect 0 0 1 0;
 #X connect 1 0 6 0;
 #X connect 2 1 3 0;
@@ -64,3 +68,7 @@
 #X connect 27 0 26 0;
 #X connect 27 1 28 0;
 #X connect 30 1 12 0;
+#X connect 31 0 33 0;
+#X connect 32 0 25 1;
+#X connect 33 0 32 0;
+#X connect 33 1 34 0;

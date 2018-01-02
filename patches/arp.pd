@@ -1,4 +1,4 @@
-#N canvas 1105 47 450 680 10;
+#N canvas 1206 106 450 680 10;
 #X declare -path lib/rjlib/rj;
 #X obj 202 83 expr 60000 / $f1;
 #X obj 300 150 / 12;
@@ -67,6 +67,12 @@
 #X obj 306 478 loadbang;
 #X obj 205 193 metro 42;
 #X msg 306 500 127;
+#X obj 380 453 r \$0-rez;
+#X obj 380 475 / 16;
+#X obj 380 542 t f f;
+#X obj 380 499 int;
+#X obj 380 521 + 1;
+#X obj 12 184 u_dispatch \$0 rez;
 #X connect 0 0 1 0;
 #X connect 1 0 39 1;
 #X connect 2 0 3 0;
@@ -107,7 +113,14 @@
 #X connect 32 0 21 0;
 #X connect 33 0 17 0;
 #X connect 34 0 20 0;
+#X connect 35 0 46 0;
 #X connect 36 0 35 0;
 #X connect 38 0 40 0;
 #X connect 39 0 2 0;
 #X connect 40 0 20 0;
+#X connect 41 0 42 0;
+#X connect 42 0 44 0;
+#X connect 43 0 17 2;
+#X connect 43 1 18 1;
+#X connect 44 0 45 0;
+#X connect 45 0 43 0;

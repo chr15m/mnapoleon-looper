@@ -1,6 +1,6 @@
 #N canvas 443 91 676 671 10;
 #X obj 49 428 *~ 1;
-#X obj 226 413 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 226 413 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 169 420 switch~;
 #X obj 49 149 *~ 0;
